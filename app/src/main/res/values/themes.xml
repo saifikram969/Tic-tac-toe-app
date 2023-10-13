@@ -2,8 +2,19 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TicTacToeOnline" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.TicTacToeOnline" parent="Base.Theme.TicTacToeOnline" />
+    <style name="Theme.TicTacToeOnline" parent="Base.Theme.TicTacToeOnline"/>
+
+        <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+            <item name="windowSplashScreenBackground">@color/colorAccent</item>
+            <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_games_24</item>
+            <item name="postSplashScreenTheme">@style/Base.Theme.TicTacToeOnline</item>
+        </style>
+
+
 </resources>

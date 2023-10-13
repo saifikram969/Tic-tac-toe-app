@@ -7,22 +7,89 @@
     android:gravity="center"
     android:layout_margin="16dp"
     android:orientation="vertical"
+android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textStyle="bold"
-        android:textSize="28sp"
         android:layout_margin="8dp"
-        android:padding="8dp"/>
-    <Button
+        android:padding="8dp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/play_offline_btn"
         android:text="Play Offline"
+        android:background="@drawable/round_button2"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:layout_margin="8dp"
         android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:padding="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_online_game_btn"
+        android:text="Create Game Online"
+        android:background="@drawable/round_button2"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:padding="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_id_input"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/black"
+        android:background="@drawable/background_edittext"
+        android:padding="8dp"
+        android:hint="Enter game Id"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/join_online_game_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:padding="8dp"
+        android:text="Join Game Online"
+        android:textColor="@color/white" />
 
     
 
